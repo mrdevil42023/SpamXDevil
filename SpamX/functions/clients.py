@@ -1,5 +1,5 @@
 """
-    SpamX by RiZoeL
+    SpamX by MrDevil
 """
 import glob
 import importlib
@@ -50,7 +50,7 @@ class SpamX(Client):
         self.loggerID = LOGGER_ID
         self.updateChannel = UpdateChannel
         self.supportGroup = SupportGroup
-        self.author = "MahipalRajput"
+        self.author = "Mrdevil"
         self.versions = version
         self.logs = LOGS
         self.sudo = sudoers
@@ -62,7 +62,7 @@ class SpamX(Client):
         self.startTime = StartTime
         self.activeTasks = activeTasks
         self.dev = devs
-        self.logo= "https://telegra.ph//file/08445817174872b47cef8.jpg"
+        self.logo= "https://graph.org/file/ef6f68f14aa47d885f01a.jpg"
 
     async def StartAllClients(self):
         LOGS.info("Loading all sessions.....")
@@ -152,16 +152,16 @@ class SpamX(Client):
                 self.logs.info(f"Error while stopping client!: {str(error)}")
 
     async def startMessage(self) -> None:
-        log_text = "**SpamX is Now Alive** \n\n"
-        log_text += f"**SpamX Clients:** __{len(self.clients)}\n\n"
+        log_text = "**SpamXDevil is Now Alive** \n\n"
+        log_text += f"**SpamXDevil Clients:** __{len(self.clients)}\n\n"
         log_text += "Versions:\n"
-        log_text += f"   ~ SpamX: {version['SpamX']} \n"
+        log_text += f"   ~ SpamXDevil: {version['SpamXDevil']} \n"
         log_text += f"   ~ PyroGram: {version['pyrogram']} \n"
         log_text += f"   ~ Python: {version['python']}"
         try:
             await self.SpamX.send_photo(
                 LOGGER_ID,
-                "https://telegra.ph//file/08445817174872b47cef8.jpg",
+                "https://graph.org/file/ef6f68f14aa47d885f01a.jpg",
                 caption=log_text,
                 parse_mode=ParseMode.MARKDOWN,
                 disable_notification=True,
@@ -229,7 +229,7 @@ class SpamX(Client):
 
     async def startup(self) -> None:
         LOGS.info(
-            f"-> Starting SpamX ....."
+            f"-> Starting SpamXDevil ....."
         )
         await self.startBot()
         await self.StartAllClients()
