@@ -18,8 +18,8 @@ version = {
     "python": python_version(),
 }
 
-UpdateChannel = "RiZoeL_X"
-SupportGroup = "RiZoeLXSupport"
+UpdateChannel = "devilbots971
+SupportGroup = "devilbotsupport"
 
 activeTasks: dict = {}
 dataBase = dataBase
@@ -28,4 +28,4 @@ dataBase = dataBase
 if PING_MSG:
     pingMSG = str(PING_MSG)
 else:
-    pingMSG = "SpamX"
+    pingMSG = "SpamXDevil"
