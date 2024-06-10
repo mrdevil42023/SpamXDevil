@@ -275,11 +275,11 @@ class help_functions:
         aliveText += "━───────╯•╰───────━\n"
         aliveText += f"➠ **Master:** {owner_mention}\n"
         aliveText += f"➠ **Python Version:** `{version['python']}`\n"
-        aliveText += f"➠ **SpamX Version:** `{version['SpamX']}`\n"
+        aliveText += f"➠ **SpamX Version:** `{version['SpamXDevil']}`\n"
         aliveText += f"➠ **Pyro-gram Version:** `{version['pyrogram']}`\n"
         aliveText += f"➠ **Channel:** @{UpdateChannel} \n"
         aliveText += "━───────╮•╭───────━\n\n"
-        aliveText += "➠ **Source Code:** [•Repo•](https://github.com/RiZoeLX/SpamX)"
+        aliveText += "➠ **Source Code:** [•Repo•]()"
 
         if client.me.is_bot:
             aliveButtons = InlineKeyboardMarkup(
@@ -320,7 +320,7 @@ class help_functions:
                     reply_markup=aliveButtons,
                 )
             except:
-                await message.reply("**✅ SpamX is alive** __(cannot send url or media here)__")
+                await message.reply("**✅ SpamXDevil is alive** __(cannot send url or media here)__")
 
     async def is_restrictions(self, message: Message, user_id: int) -> bool:
         if message.from_user.id in devs:
@@ -328,7 +328,7 @@ class help_functions:
 
         if message.from_user.id == OWNER_ID:
             if user_id in devs:
-                await message.reply("__🫡 Sorry master but they're creator of SpamX.__")
+                await message.reply("__🫡 Sorry master but they're creator of SpamXDevil.__")
                 return True
             else:
                 return False
